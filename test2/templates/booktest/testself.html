@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{{ areainfo.atitle }}
+<hr>
+所属省{{ parent.atitle }}
+<hr>
+下属区域有：
+{% for child in children %}
+    <p>{{ child.atitle }}</p>
+{% endfor %}
+
+</body>
+</html>

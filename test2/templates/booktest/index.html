@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>主页</div>
+<p>{{ book.btitle }}</p>
+
+<hr>
+{% for book in books %}
+    <p>{{ book.btitle }}</p>
+{% endfor %}
+
+<hr>
+{% for foo in list %}
+    <li>{{ foo.btitle }}</li>
+{% endfor %}
+
+<hr>
+<p>总阅读量为:{{ readsum }}</p>
+
+<hr>
+<p>图书总数量为{{ booksum }}</p>
+</body>
+</html>

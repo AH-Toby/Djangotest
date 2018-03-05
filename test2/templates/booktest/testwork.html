@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+你查询到的英雄是{% for foo in hero %}
+    <p>{{ foo.hname }}</p>
+
+{% endfor %}
+女性英雄的总数为{{ count }}
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>id为1的图书是{{ book.btitle }}</h1>
+<hr>
+<p>{{ book.btitle }}里面的英雄有</p>
+{% for hero in heros %}
+    <li>{{ hero.hname }}</li>
+{% endfor %}
+<hr>
+
+<h2>id为1的英雄是{{ hero.hname }}</h2>
+<hr>
+<p>{{ hero.hname }}属于图书{{ book1.btitle }}</p>
+
+
+</body>
+</html>
